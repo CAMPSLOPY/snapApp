@@ -1,3 +1,5 @@
+    /* google font */
+    @import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@100;200;500&display=swap');
 
 /* global styling */
 *, *::before, *::after{
@@ -13,4 +15,9 @@
 
     html{
         font-size: 62.5%;
+        font-family: 'Epilogue', sans-serif;
     }
+
+
+
+
