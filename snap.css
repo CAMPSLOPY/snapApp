@@ -1,23 +1,115 @@
     /* google font */
-    @import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@100;200;500&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
 
-/* global styling */
-*, *::before, *::after{
-    box-sizing: border-box;
-    font-weight: normal;
-    font-family: Gotham Rounded, sans-serif;
+    /* global styling */
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+        font-weight: normal;
+        font-family: Gotham Rounded, sans-serif;
     }
 
-    body{
+    body {
         margin: 0;
         padding: 0;
     }
 
-    html{
+    html {
         font-size: 62.5%;
+        font-family: 'Epilogue', sans-serif;
+
+    }
+
+    a,
+    p {
+        font-size: 2rem;
+        color: hsl(0, 0%, 41%);
+    }
+
+    /* nav bar */
+
+    .main_nav {
+        position: relative;
+    }
+
+    nav .nav_list {
+        flex: 1;
+        flex-basis: 25rem;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        min-height: 10vh;
+        width: 90;
+        margin: auto;
+    }
+
+    nav ul {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex: 1 1 40rem;
+    }
+
+    nav ul li a {
+        color: hsl(0, 0%, 41%);
+    }
+
+    nav .nav_button {
+        flex: 1 1 40rem;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .nav_button button {
+        margin: 1rem;
+        font-size: 2rem;
+        color: hsl(0, 0%, 41%);
+    }
+
+    .btn-reg {
+        border: 1px solid hsl(0, 0%, 41%);
+        border-radius: 1rem;
+        padding: 0.3rem 0.8rem;
+    }
+
+    .nav_list li {
+        margin: 0rem 1.5rem;
+    }
+
+    .logo {
+        font-size: 3rem;
+        padding: 0rem 1.3rem;
+        font-weight: 700;
         font-family: 'Epilogue', sans-serif;
     }
 
 
 
+    /* disabling the drop downs */
+    .feat_drop {
+        height: 15rem;
+        width: 10%;
+        border-radius: 8px;
+        position: absolute;
+        background: #fff;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
 
+    .feat_list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .feat_list_btn{
+        display: flex;
+    }
+    .feat_list_btn a{
+        font-size: 1.7rem;
+    }
+    .company_features {
+        display: none;
+    }
