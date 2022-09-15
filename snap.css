@@ -33,6 +33,7 @@
         position: relative;
     }
 
+   
     nav .nav_list {
         flex: 1;
         flex-basis: 25rem;
@@ -56,6 +57,7 @@
 
     nav ul li a {
         color: hsl(0, 0%, 41%);
+
     }
 
     nav .nav_button {
@@ -90,25 +92,43 @@
 
 
     /* disabling the drop downs */
+    
+  .feat_box{
+    position: relative;
+  }
     .feat_drop {
-        height: 15rem;
-        width: 10%;
+        height: 20rem;
+        width: 170%;
         border-radius: 8px;
-        position: absolute;
+        position:absolute; ;
         background: #fff;
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     }
 
     .feat_list {
         display: flex;
         flex-direction: column;
+        margin: 4rem 1rem;
+        position: relative;
+   
+
     }
 
     .feat_list_btn{
         display: flex;
+        margin: 0rem 0.4rem;
+        justify-content: space-around;
+        padding: 0.5rem 0.8rem;
     }
+    
     .feat_list_btn a{
-        font-size: 1.7rem;
+        font-size: 1.5rem;
+    }
+    .feat_list_btn img{
+        max-width: 15%;
+        margin: 0.3rem;
+        position: relative;
+
     }
     .company_features {
         display: none;
