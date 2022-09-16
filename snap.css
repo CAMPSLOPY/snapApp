@@ -98,25 +98,24 @@
   }
     .feat_drop {
         height: 20rem;
-        width: 170%;
+        width: 20rem;
         border-radius: 8px;
         position:absolute; ;
         background: #fff;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        display: flex;
+        align-items: center;
     }
 
     .feat_list {
         display: flex;
         flex-direction: column;
-        margin: 4rem 1rem;
         position: relative;
-   
 
     }
 
     .feat_list_btn{
         display: flex;
-        margin: 0rem 0.4rem;
         justify-content: space-around;
         padding: 0.5rem 0.8rem;
     }
@@ -132,4 +131,13 @@
     }
     .company_features {
         display: none;
+    }
+
+
+    /* main section */
+
+    .main{
+        min-height: 100vh;
+        width: 80%;
+        margin: auto;
     }
