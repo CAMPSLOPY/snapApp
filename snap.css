@@ -97,9 +97,9 @@
     position: relative;
   }
     .feat_drop {
-        height: 20rem;
-        width: 20rem;
-        border-radius: 8px;
+        height: 18rem;
+        width: 16rem;
+        border-radius: 16px;
         position:absolute; ;
         background: #fff;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -111,24 +111,40 @@
         display: flex;
         flex-direction: column;
         position: relative;
-
     }
 
     .feat_list_btn{
         display: flex;
-        justify-content: space-around;
+        justify-content:space-evenly;
         padding: 0.5rem 0.8rem;
+
     }
     
     .feat_list_btn a{
         font-size: 1.5rem;
+        right: -10px;
+    position: relative;
+    letter-spacing: 0.8px;
     }
     .feat_list_btn img{
-        max-width: 15%;
-        margin: 0.3rem;
-        position: relative;
-
+ left: -10px;
+ position: relative;
+ object-fit:contain;
     }
+    /* .feat_list_image_1{
+     right: 9px;
+        position: absolute;
+    } */
+    .feat_list_btn .feat_list_image_2{
+    position: relative;
+    left: -15px;
+}
+ 
+.feat_list_btn .feat_list_image_1{
+    position: relative;
+    left: -15px;
+}
+
     .company_features {
         display: none;
     }
