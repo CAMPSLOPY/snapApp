@@ -96,59 +96,65 @@
   .feat_box{
     position: relative;
   }
+  /* features modal list script */
     .feat_drop {
-        height: 18rem;
+        height: 16rem;
         width: 16rem;
         border-radius: 16px;
-        position:absolute; ;
         background: #fff;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-        display: flex;
-        align-items: center;
-    }
-
-    .feat_list {
-        display: flex;
-        flex-direction: column;
-        position: relative;
-    }
-
-    .feat_list_btn{
-        display: flex;
-        justify-content:space-evenly;
-        padding: 0.5rem 0.8rem;
-
-    }
-    
-    .feat_list_btn a{
-        font-size: 1.5rem;
-        right: -10px;
-    position: relative;
-    letter-spacing: 0.8px;
-    }
-    .feat_list_btn img{
- left: -10px;
- position: relative;
- object-fit:contain;
-    }
-    /* .feat_list_image_1{
-     right: 9px;
         position: absolute;
-    } */
-    .feat_list_btn .feat_list_image_2{
-    position: relative;
-    left: -15px;
-}
- 
-.feat_list_btn .feat_list_image_1{
-    position: relative;
-    left: -15px;
-}
+        display: none;
+        left: 0;
+    }
 
+ .feat_list_btn{
+    width : 85%;
+    margin: auto;
+    display: flex;
+    justify-content:center;
+
+ }
+ .feat_list_btn_img{
+    margin-right: 12px;
+ }
+    .feat_list_btn p{
+    font-size: 1.5rem;
+    margin: 0.4rem 0;
+    }
+  
+
+    .feat_list_image{
+        padding: 0.4rem 0;
+        width: 18px;
+    }
+/* company modal list script */
     .company_features {
         display: none;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        height: 12rem;
+        width: 12rem;
+        position: absolute;
+        background: #fff;
+        border-radius: 16px;
+        left: 23%;
+        
     }
 
+    .company_features  .company_features_list{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content:center;
+       width: 100%;
+    }
+
+    .company_features  li{
+        margin: 0.3rem 0;
+        font-size: 1.5rem;
+        color: hsla(0, 0%, 41%, 0.801);
+        font-weight: normal;
+    }
 
     /* main section */
 
@@ -156,4 +162,10 @@
         min-height: 100vh;
         width: 80%;
         margin: auto;
+        background-color: red;
+        display: flex;
+  
     }
+
+
+    
