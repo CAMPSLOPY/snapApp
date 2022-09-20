@@ -8,6 +8,7 @@
         box-sizing: border-box;
         font-weight: normal;
         font-family: Gotham Rounded, sans-serif;
+
     }
 
     body {
@@ -18,7 +19,6 @@
     html {
         font-size: 62.5%;
         font-family: 'Epilogue', sans-serif;
-
     }
 
     a,
@@ -33,7 +33,7 @@
         position: relative;
     }
 
-   
+
     nav .nav_list {
         flex: 1;
         flex-basis: 25rem;
@@ -44,7 +44,7 @@
         align-items: center;
         justify-content: space-around;
         min-height: 10vh;
-        width: 90;
+        width: 95%;
         margin: auto;
     }
 
@@ -69,7 +69,8 @@
     .nav_button button {
         margin: 1rem;
         font-size: 2rem;
-        color: hsl(0, 0%, 41%);
+        color: hsla(0, 0%, 41%, 0.58);
+        font-family: 'Epilogue', sans-serif;
     }
 
     .btn-reg {
@@ -92,11 +93,12 @@
 
 
     /* disabling the drop downs */
-    
-  .feat_box{
-    position: relative;
-  }
-  /* features modal list script */
+
+    .feat_box {
+        position: relative;
+    }
+
+    /* features modal list script */
     .feat_drop {
         height: 16rem;
         width: 16rem;
@@ -108,27 +110,30 @@
         left: 0;
     }
 
- .feat_list_btn{
-    width : 85%;
-    margin: auto;
-    display: flex;
-    justify-content:center;
+    .feat_list_btn {
+        width: 85%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
 
- }
- .feat_list_btn_img{
-    margin-right: 12px;
- }
-    .feat_list_btn p{
-    font-size: 1.5rem;
-    margin: 0.4rem 0;
     }
-  
 
-    .feat_list_image{
+    .feat_list_btn_img {
+        margin-right: 12px;
+    }
+
+    .feat_list_btn p {
+        font-size: 1.5rem;
+        margin: 0.4rem 0;
+    }
+
+
+    .feat_list_image {
         padding: 0.4rem 0;
         width: 18px;
     }
-/* company modal list script */
+
+    /* company modal list script */
     .company_features {
         display: none;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -138,18 +143,18 @@
         background: #fff;
         border-radius: 16px;
         left: 23%;
-        
+
     }
 
-    .company_features  .company_features_list{
-       display: flex;
-       flex-direction: column;
-       align-items: center;
-       justify-content:center;
-       width: 100%;
+    .company_features .company_features_list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
     }
 
-    .company_features  li{
+    .company_features li {
         margin: 0.3rem 0;
         font-size: 1.5rem;
         color: hsla(0, 0%, 41%, 0.801);
@@ -159,13 +164,41 @@
     /* main section */
 
     .main{
-        min-height: 100vh;
+        min-height: 90vh;
         width: 80%;
-        margin: auto;
-        background-color: red;
+        background-color:red;
         display: flex;
-  
+        flex-wrap: wrap;
+        margin:  auto;
     }
 
+    /* designing the main content text and its sponsor image */
+    .main_content {
+        display: flex;
+      flex: 2 1 40rem;
+      flex-direction: column;
+      align-items: center;
+      justify-content:center;
+    }
+    .main_content_text{
+        width: 100%;
+    }
+    .main_content_text h1{
+    font-size: 5rem;
+    font-weight: bold;
+    padding-bottom: 3rem;
 
-    
+    }
+.main_content_sponsors{
+    width: 100%;
+
+}
+    .main_image{
+        flex: 1 1 40rem;
+    }
+   
+    .main_image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    } 
